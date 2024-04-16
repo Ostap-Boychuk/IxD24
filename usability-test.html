@@ -20,6 +20,26 @@
             text-align: center;
             margin: 10px auto;
         }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 40px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: lightseagreen;
+            color: lightseagreen;
+        }
+
+        td {
+            border: 1px solid #bdc3c7;
+        }
     </style>
 </head>
 <body>
@@ -29,8 +49,46 @@
         <button onclick="location.href='competitive-audit.html';">Competitive Audit</button>
         <button onclick="location.href='wireframes.html';">Wireframes</button>
         <button onclick="location.href='prototype.html';">Prototype</button>
-        <button onclick="location.href='usabilyty-test.html';">Usability Test</button>
+        <button onclick="location.href='usability-test.html';">Usability Test</button>
     </div>
-    <img src="img/usability.jpg" alt="usTest">
+    <table>
+        <thead>
+            <tr>
+                <th>Testing</th>
+                <th>Task</th>
+                <th>Click Path</th>
+                <th>Observations</th>
+                <th>Quotes</th>
+                <th>Task feedback</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Testing 1</td>
+                <td>In figma prototype find your results.</td>
+                <td>From home page > click on user information. </td>
+                <td>User need to click only once to reach his results.</td>
+                <td>"Desing is simple and easy to use"</td>
+                <td>1-easy to do</td>
+            </tr>
+            <tr>
+                <td>Testing  2</td>
+                <td>In figma prototype find your english tests.</td>
+                <td>From home page > click on buttoms COURSES > find english in list</td>
+                <td>User need to click only 2 times to reach his results.</td>
+                <td>"Good job with simple design. Everything easy to understand." </td>
+                <td>2-easy to find</td>
+            </tr>
+            <tr>
+                <td>Testing  3</td>
+                <td>In figma go to any page and come back to amin screen</td>
+                <td>From main page click any buttom > press buttom home</td>
+                <td>User can easily come back to home page by pressing HOME buttom</td>
+                <td>"Interesting design, easy to come back to home page"</td>
+                <td>3-easy to fly around onapp</td>
+            </tr>
+
+        </tbody>
+    </table>
 </body>
 </html>

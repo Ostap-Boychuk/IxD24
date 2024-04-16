@@ -20,6 +20,41 @@
             text-align: center;
             margin: 10px auto;
         }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: lightseagreen;
+            color: white;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+
+        .red {
+            background-color: palevioletred;
+        
+        }
+
+        .yellow {
+            background-color: yellow;
+            
+        }
+
+        .green {
+            background-color: lightgreen;
+            
+        }
     </style>
 </head>
 <body>
@@ -30,6 +65,43 @@
         <button onclick="location.href='prototype.html';">Prototype</button>
         <button onclick="location.href='usability-test.html';">Usability Test</button>
     </div>
-    <img class="img-table" src="img/table.jpg" alt="my table">
-</body>
+    <table>
+        <thead>
+            <tr>
+                <th>Questions</th>
+                <th>Khan Academy </th>
+                <th>Coursera </th>
+                <th>TED Ed </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Engagement: How engaging is the app? Is it visually appealing? Does it have sound and animation to capture the user's attention? Does it have a good balance of challenge and reward?</td>
+                <td class="green">Khan Academy uses several features to make learning engaging. The interface is clean and avoids clutter, while animations and Sal Khan's friendly narration add a touch of personality. Lessons are broken down into short videos, and gamification elements like points and badges keep users motivated. 8/10</td>
+                <td class="green">Coursera offers well-produced courses from prestigious institutions, but it prioritizes quality content over flashy animations and gamification.  While it might not be the most interactive platform, learners can find deep engagement through challenging coursework and the opportunity to earn valuable certifications.  8/10</td>
+                <td class="green">TED-Ed utilizes animation, narration, and a wide range of subjects to create visually interesting and engaging educational videos.  Bringing complex topics to life, TED-Ed's animated lessons with engaging narration make learning fun across a vast range of subjects. 8/10<td>
+            </tr>
+            <tr>
+                <td>Progress tracking: How well does the app track the user's progress? Does it provide feedback and recommendations to help users improve their performance? Does it use data to personalize the learning experience?</td>
+                <td class="green">Khan Academy keeps you on track with detailed progress reports and provides immediate feedback to pinpoint areas for improvement. It leverages this data to personalize your learning journey, adjusting difficulty and recommending relevant exercises to keep you challenged and engaged. 9/10</td>
+                <td class="yellow">Coursera excels at tracking progress for certificate-focused learners. It offers detailed breakdowns by week/module, highlights completed tasks, and includes progress bars for clear visualization. However, Coursera currently doesn't personalize the learning experience or provide in-depth performance feedback beyond grades. 7/20</td>
+                <td class="red">TED Ed itself doesn't offer in-depth progress tracking. While logged-in users have a watch history, there are no features for personalized learning or feedback based on what you've watched. 3/10</td>
+            </tr>
+            <tr>
+                <td>
+                    User experience: How user-friendly is the app? Is it easy to navigate and use? Does it have clear instructions and prompts? Does it have a well-designed interface?
+                </td>
+                <td class="green">Khan Academy keeps things user-friendly with a clean interface and intuitive navigation. Straightforward instructions in lessons ensure you understand what to do, making learning easy to access and focus on.  8/10</td>
+                <td class="green">Coursera's app prioritizes user-friendliness with clear instructions, a well-designed interface, and easy navigation. It excels at tracking progress for certifications but currently lacks personalized learning features or in-depth performance feedback. 8/10</td>
+                <td class="green">Bypassing the need for an app, the TED Ed website offers a user-friendly experience. With a clean interface, clear navigation, and focus on the content itself, finding and watching educational videos is a breeze. 9/10</td>
+            </tr>
+            <tr>
+                <td>Total score</td>
+                <td>25/30</td>
+                <td>23/30</td>
+                <td>20/30</td>
+            </tr>
+        </tbody>
+    </table>
+    </body>
 </html>
